@@ -31,10 +31,10 @@ export const quicklink = {
       icon_alt: 'Icon: Request Vacation'
     },
     {
-      name: 'Sport im TechBude',
+      name: 'Sport in der TechBude',
       link: 'https://google.de',
       icon: 'assets/Quicklinks/sport-at-techbude.svg',
-      icon_alt: 'Icon: Sport at Tech Bude'
+      icon_alt: 'Icon: Sport at TechBude'
     }
   ]
 };

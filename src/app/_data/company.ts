@@ -5,11 +5,11 @@ export const company = {
       link: 'https://google.de'
     },
     {
-      name: 'Organigramm Tech Bude',
+      name: 'Organigramm TechBude',
       link: 'https://google.de'
     },
     {
-      name: 'Tech Bude Blog',
+      name: 'TechBude Blog',
       link: 'https://google.de'
     },
     {
@@ -17,23 +17,23 @@ export const company = {
       link: 'https://google.de'
     },
     {
-      name: 'Sitzplan Tech Bude',
+      name: 'Sitzplan TechBude',
       link: 'https://google.de'
     },
     {
-      name: 'Tech Bude-Team Vorstellung',
+      name: 'TechBude-Team Vorstellung',
       link: 'https://google.de'
     },
     {
-      name: 'Tech Bude-Crew Startpage',
+      name: 'TechBude-Crew Startpage',
       link: 'https://google.de'
     },
     {
-      name: 'Tech Bude-Guilden',
+      name: 'TechBude-Guilden',
       link: 'https://google.de'
     },
     {
-      name: 'Tech Bude-Buisness Crews',
+      name: 'TechBude-Buisness Crews',
       link: 'https://google.de'
     },
   ]
