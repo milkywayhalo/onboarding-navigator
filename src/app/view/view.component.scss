@@ -1,0 +1,261 @@
+@import './src/styles.scss';
+
+.sidebar {
+  height: 100%;
+  width: 22%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  float: right;
+  margin-top: 0;
+  padding-top: 0;
+  background-color: $main-box-background-color;
+  overflow-y: scroll;
+}
+
+.sidebar_main_content {
+  justify-content: left;
+  text-align: left;
+  padding-top: 200px;
+  padding-left: 15%;
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+
+.sidebar_main_header {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.sidebar_main_contact-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar_line-box-element {
+  padding-bottom: 0;
+}
+
+.sidebar_line-box-element hr {
+  border-top: 0.5px solid grey;
+  margin: 0;
+}
+
+.body_main {
+  padding-bottom: 30px;
+  padding-left: 20px;
+}
+
+.body_main_header-wrapper {
+  padding-top: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+  max-width: 75%;
+}
+
+.body-header_text-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+}
+
+.body-header_text-left_one {
+  font-weight: lighter;
+  font-size: $company-logo-font-size;
+}
+
+.body_main_header-wrapper img {
+  width:20%;
+}
+
+.body-welcome_wrapper {
+  max-width: 90%;
+  padding-bottom: 5%;
+}
+
+.body-welcome_content {
+  max-width: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+}
+.body-welcome_text-wrapper-subheader {
+  font-size: larger
+  }
+
+.body-welcome_content img {
+  max-width: 250px;
+}
+
+.body-welcome_text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.body-welcome_header {
+  font-weight: bolder;
+  padding-bottom: 3%;
+  font-size: $main-header-font-size;
+}
+
+.apprenticeship-box {
+  max-width: 70%;
+  padding: 40px;
+  background-color: $main-box-background-color;
+  box-shadow: rgba(100, 100, 111, 0.2) 15px 15px 20px 2px;
+}
+
+.apprenticeship-box_header {
+  font-weight: bolder;
+  padding-bottom: 3%;
+  font-size: $main-header-font-size;
+}
+
+.apprenticeship-box button {
+  background: linear-gradient(0.25turn, #BC38E5, #6ADFF4);
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 15px 15px 15px 40px;
+  width: 300px;
+  font-size: 14px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 15px;
+  cursor: $main-cursor;
+  box-shadow: rgba(100, 100, 111, 0.2) 8px 8px 10px;
+
+  &:hover {
+    box-shadow: rgba(213, 150, 235, 1.2) 8px 8px 10px;
+    transform: scale(1.04);
+  }
+}
+
+.quicklinks-container {
+  padding-top: 20%;
+  padding-bottom: 20px;
+}
+
+.quicklinks-wrapper_header {
+  font-weight: bolder;
+  font-size: $main-header-font-size;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.quicklinks-wrapper {
+  padding-top: 50px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+
+.todo-box {
+  max-width: 70%;
+  padding: 16px;
+  background-color: $main-box-background-color;
+  box-shadow: rgba(100, 100, 111, 0.2) 15px 15px 20px 2px;
+}
+
+.todo-subheader, .todo-header {
+  text-align: start;
+  font-weight: bolder;
+  font-size: 22px;
+}
+
+.todo-header {
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+.todo-subheader {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.todo-box-subheader {
+  padding-top: 50px;
+  padding-bottom: 45px;
+  text-align: center;
+}
+
+.todo-box_wrapper-todo-list-boxes {
+  display: flex;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.todo-checklist_wrapper {
+  background-color: $main-box-background-color;
+  margin: 20px;
+  padding: 16px;
+  width: 250px;
+  height: 430px;
+  text-align: left;
+  font-size: 11px;
+  list-style: none;
+  box-shadow: rgba(100, 100, 111, 0.25) 8px 6px 25px 2px;
+
+}
+
+.todo-checklist_header-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-inline-start: 15px;
+}
+
+.todo-checklist_header {
+  text-align: start;
+  font-weight: bold;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  font-size: 15px;
+}
+
+.line-element {
+  border-top: 6px solid purple;
+  margin-inline-start: 15px;
+}
+
+.line-element-box {
+  padding-bottom: 30px;
+  width: 200px;
+}
+
+.todo_single-checklist-item-container {
+  width: 210px;
+  margin-inline-start: 20px;
+}
+
+.todo_single-checklist-item-subheader {
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.checkbox-with-text-row {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.accordion-arrow {
+  width: 30px;
+}
+
+
+
+

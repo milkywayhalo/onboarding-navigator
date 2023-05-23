@@ -1,0 +1,153 @@
+<div class="sidebar">
+  <div class="sidebar_main_content">
+    <div class="sidebar_main_header">Deine Ansprechpartner</div>
+    <div class="sidebar_main_contact-wrapper">
+
+      <ng-container *ngFor="let main of main_contact">
+        <app-contact-content [contact]="main"></app-contact-content>
+      </ng-container>
+
+      <ng-container *ngIf="typeApprenticeship===anwendungsentwicklung">
+        <ng-container *ngFor="let select_a of select_contact_a">
+          <app-contact-content [contact]="select_a"></app-contact-content>
+        </ng-container>
+      </ng-container>
+
+      <ng-container *ngIf="typeApprenticeship===systemintegration">
+        <ng-container *ngFor="let select_s of select_contact_s">
+          <app-contact-content [contact]="select_s"></app-contact-content>
+        </ng-container>
+      </ng-container>
+    </div>
+  </div>
+
+  <div class="quicklinks-container">
+    <ng-container *ngIf="apprenticeshipTypePresent()">
+      <div class="quicklinks-wrapper_header">
+        Quicklinks
+      </div>
+      <div class="quicklinks-wrapper">
+        <ng-container *ngFor="let quick of main_quickLink">
+          <app-quicklink [quickLink]="quick"></app-quicklink>
+        </ng-container>
+      </div>
+    </ng-container>
+  </div>
+</div>
+
+<div class="body_main">
+  <div class="body_main_header-wrapper">
+      <div class="body-header_text-left_one">
+        ON - Onboarding Navigator
+      </div>
+    <img alt="TechBude_Logo"
+         src="/assets/TechBude-Logo/Logo_komplett_black.png">
+  </div>
+  <div class="body-welcome_wrapper">
+    <div class="body-welcome_content">
+      <img alt="Robot Says Hi Image"
+           src="/assets/Robot/Robot-Hi.svg">
+        <div class="body-welcome-text">
+          <div class="body-welcome_header">
+          Herzlich Willkommen in der TechBude!
+          </div>
+          <div class="body-welcome_text-wrapper-subheader">
+          Schön, dass du hier bist!<br>
+          Damit du einen möglichst angenehmen Start bei uns hast,<br>
+          haben wir dir hier einen kleinen Guide für den Anfang<br>
+          bereitgestellt.<br>
+          </div>
+      </div>
+    </div>
+
+    <div class="apprenticeship-box">
+      <div class="apprenticeship-box_header">
+        Wähle deine Ausbildungsrichtung
+      </div>
+      <button (click)="selectApprenticeshipField(anwendungsentwicklung)">
+        Fachinformatiker für <br>Anwendungsentwicklung
+      </button>
+      <button (click)="selectApprenticeshipField(systemintegration)">
+        Fachinformatiker für <br>Systemintegration
+      </button>
+    </div>
+  </div>
+
+    <ng-container *ngIf="apprenticeshipTypePresent()">
+      <div class="todo-box">
+        <div class="todo-header">Aufgaben</div>
+        <div class="todo-subheader">Wähle einen Link aus den Checklisten, den du bearbeiten möchtest</div>
+        <div class="todo-box_wrapper-todo-list-boxes">
+          <ng-container *ngFor="let todoList of allTodoList">
+            <div class="todo-checklist_wrapper">
+              <div class="todo-checklist_header-wrapper">
+                <div class="todo-checklist_header">{{todoList.name}}</div>
+                <div class="accordion-arrow">
+                  <img alt="Akkordeon Pfeil"
+                       src="/assets/Others/accordion-arrow.svg">
+                </div>
+              </div>
+              <div class="line-element-box">
+                <hr class="line-element">
+              </div>
+
+              <div class="todo_single-checklist-item-container">
+                <ng-container *ngFor="let todoLink of todoList.todoLinks.main">
+                  <div *ngIf="!(loadData(this.todoLink.name))">
+                    <app-todo [todoLink]="todoLink"></app-todo>
+                  </div>
+                </ng-container>
+                <ng-container *ngIf="typeApprenticeship===anwendungsentwicklung">
+                  <ng-container *ngFor="let todoLink of todoList.todoLinks.select_Anwendungsentwickler">
+                    <div *ngIf="!(loadData(this.todoLink.name))">
+                      <app-todo [todoLink]="todoLink"></app-todo>
+                    </div>
+                  </ng-container>
+                </ng-container>
+                <ng-container *ngIf="typeApprenticeship===systemintegration">
+                  <ng-container *ngFor="let todoLink of todoList.todoLinks.select_Systemintegration">
+                    <div *ngIf="!(loadData(this.todoLink.name))">
+                      <app-todo [todoLink]="todoLink"></app-todo>
+                    </div>
+                  </ng-container>
+                </ng-container>
+
+                <div class="checkbox-with-text-row">
+                  <div class="checkbox-input-label">
+                    <label><input type="radio"></label>
+                  </div>
+                  <div class="todo_single-checklist-item-subheader">
+                    Erledigte Unteraufgaben
+                  </div>
+                    <div class="accordion-arrow">
+                      <img alt="Akkordeon Pfeil"
+                           src="/assets/Others/accordion-arrow.svg">
+                    </div>
+                </div>
+                <div *ngFor="let todoLink of todoList.todoLinks.main">
+                  <div *ngIf="loadData(this.todoLink.name)">
+                    <app-todo [todoLink]="this.todoLink"></app-todo>
+                  </div>
+                </div>
+                <div *ngFor="let todoLink of todoList.todoLinks.select_Anwendungsentwickler">
+                  <div *ngIf="loadData(this.todoLink.name)">
+                    <app-todo [todoLink]="this.todoLink"></app-todo>
+                  </div>
+                </div>
+                <div *ngFor="let todoLink of todoList.todoLinks.select_Systemintegration">
+                  <div *ngIf="loadData(this.todoLink.name)">
+                    <app-todo [todoLink]="this.todoLink"></app-todo>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ng-container>
+        </div>
+      </div>
+    </ng-container>
+</div>
+
+
+
+
+

@@ -1,0 +1,39 @@
+ul {
+  margin: 0px;
+  padding: 0px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 12px;
+  list-style: none;
+}
+
+a {
+  margin-inline-start: 10px;
+  color: black;
+  text-decoration: none;
+
+  &:hover {
+    text-shadow: 2px 2px 5px rgba(213, 150, 235, 10.0);
+    font-weight: bold;
+  }
+}
+
+.todo-name {
+  padding-bottom: 6%;
+}
+
+.checkbox-with-text-row {
+  display: flex;
+  flex-direction: row;
+}
+
+dl {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+
+
+
+
+

@@ -1,0 +1,34 @@
+.contact-img,
+.contact-name,
+.contact-position,
+.contact-team-img,
+.contact-telephone,
+.contact-email {
+  padding-bottom: 5px;
+}
+
+.contact-img img {
+  width: 30%;
+  border-radius: 50%;
+}
+
+.contact-img {
+  padding-top: 60px;
+}
+
+.contact-position {
+  max-width: 95px;
+}
+
+.contact-team-img img {
+  width: 20%;
+}
+
+.contact-name {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.contact-email {
+  padding-bottom: 40px;
+}

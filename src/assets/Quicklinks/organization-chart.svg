@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg id="Ebene_1" style="enable-background:new 0 0 140 140;" version="1.1" viewBox="0 0 140 140"
+     x="0px"
+     xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+<style type="text/css">
+	.st0 {
+    fill: none;
+    stroke: #161615;
+    stroke-width: 3;
+    stroke-miterlimit: 10;
+  }
+
+  .st1 {
+    opacity: 0.5;
+    fill: #FFE900;
+    enable-background: new;
+  }
+</style>
+  <ellipse class="st0" cx="70.07" cy="51.91" id="Ellipse_132" rx="14.68" ry="14.68"/>
+  <g id="Gruppe_44252" transform="translate(42.717 7.883)">
+	<path class="st0" d="M22.17,50.92h10.38c0,0,1.68-9.61-5.19-9.2S22.17,50.92,22.17,50.92z" id="Pfad_242"/>
+    <ellipse class="st0" cx="27.56" cy="38.72" id="Ellipse_131" rx="2.8" ry="2.99"/>
+</g>
+  <path class="st0" d="M69.72,66.54v11.6H38.43c0,0-2.47-1.27-2.28,9.06" id="Pfad_245"/>
+  <path class="st0" d="M70.65,78.13h29.72c0,0,2.35-1.27,2.16,9.06" id="Pfad_246"/>
+  <line class="st0" id="Linie_41" x1="69.72" x2="69.72" y1="86.79" y2="78.49"/>
+  <rect class="st0" height="15.47" id="Rechteck_623" width="25.31" x="90.36" y="87.67"/>
+  <rect class="st0" height="15.47" id="Rechteck_624" width="25.31" x="56.93" y="87.68"/>
+  <rect class="st0" height="15.47" id="Rechteck_625" width="25.31" x="23.49" y="87.67"/>
+  <rect class="st1" height="11.86" id="Rechteck_626" width="92.94" x="23.11" y="70.92"/>
+</svg>

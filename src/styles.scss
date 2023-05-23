@@ -1,0 +1,15 @@
+@import './src/app/_styleConstants/constants.scss';
+
+* body,
+html {
+  cursor: default;
+  height: 100%;
+  font-family: "Arial", sans-serif;
+  margin: 0px;
+  background: rgba(246, 246, 246, 1.0);
+  background-size: cover;
+  color: black;
+  justify-content: center;
+  text-align: center;
+  padding-left: 10px;
+}

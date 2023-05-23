@@ -1,0 +1,23 @@
+@import './src/app/_styleConstants/constants.scss';
+
+.single-link-container {
+  width: 120px;
+  height: 120px;
+  float: left;
+  color: white;
+  box-shadow: $main-shadow-container;
+  display: block;
+  text-decoration: none;
+  cursor: $main-cursor;
+}
+
+.quicklink-icon img {
+  width: 80px;
+}
+
+.quicklink-name {
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+}
+
